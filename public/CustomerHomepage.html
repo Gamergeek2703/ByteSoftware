@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 07</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src = "loadData.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="CustomerHomepage.css">
+        <script src = "requestService.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body onload = "loadData('#customerHomepageName')" >
+		<div class="wrapper d-flex align-items-stretch">
+      
+			<nav id="sidebar" class="active">
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="CustomerHomepage.html"><span class="fa fa-home" style="color:#333333"></span></a>
+          </li>
+          <li>
+              <a href="customerProfile.html"><span class="fa fa-user" style="color:#333333"></span></a>
+          </li>
+          <li>
+            <a href="CustomerMyOrders.html"><span class="fa fa-sticky-note" style="color:#333333"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-comments-o" style="color:#333333"></span></a>
+          </li>
+          <li>
+            <a href="customerMembership.html"><span class="fa fa-calendar" style="color:#333333"></span></a>
+          </li>
+          <li>
+            <a href="customerPayment.html"><span class="fa fa-credit-card" style="color:#333333"></span></a>
+          </li>
+          <li style="margin-top: 200px;">
+            <a href="index.html"><span class="fa fa-sign-out" style="color:#333333"></span></a>
+          </li>
+        </ul>
+
+        <div class="footer">
+        	<p>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+					</p>
+        </div>
+    	</nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img style="height: 25px;" src="BYTE Logo.png" alt="">
+            <div class="container-fluid">
+    
+              <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+              </button> -->
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                  <li style="position: relative; left: 1150px; text-decoration: none;" class="nav-item active">
+                      <a style="text-decoration: none;" class="nav-link" href="#" id = "customerHomepageName"><span class="fa fa-user" style="color:#333333"></span>  Name</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+          <div style="width: 75%; margin-left: 125px;" class="card-group">
+            <div style="margin-left: 20px;" class="card">
+              
+              <div class="card-body">
+                <img src="Pending Requests Icon.png" alt="">
+                <h3 class="card-title">Pending Requests</h3>
+                <hr>
+                <p></p>
+               </div>
+            </div>
+            <div style="margin-left: 20px;" class="card">
+              
+              <div class="card-body">
+                <img src="active.png" alt="">
+                <h3 class="card-title">Active Orders</h3>
+                <hr>
+                <p></p>
+                </div>
+            </div>
+            <div style="margin-left: 20px;" class="card">
+              
+              <div class="card-body">
+                <img src="completed.jpg" alt="">
+                <h3 class="card-title">Completed Orders</h3>
+                <hr>
+                <p></p>
+                </div>
+            </div>
+            <div style="margin-left: 20px;" class="card">
+              
+              <div class="card-body">
+                <img src="profile2.jpg" alt="">
+                <h3 class="card-title">Active Users</h3>
+                <hr>
+                <p></p>
+                </div>
+            </div>
+          </div>
+         
+
+      <div class="box">
+        <div>
+        <form onsubmit = "sendServiceRequest();return false" class="appointment-form" id="appointment-form">
+          <table>
+          <tr><td><h1 style="letter-spacing:2px">Request a service</h1></td></tr>
+          <tr><td><h3>Service</h3></td></tr>
+          <tr><td> <p>Select a service type by either typing a service you want above 
+            or selecting it from the drop down menu</p></td></tr>
+          <div class="form-group-1">
+                  <tr>
+                  <td>
+                    <select id = "serviceSelected" class="form-select dropbtn" aria-label="Default select example">
+                      <option selected>Fence Installation</option>
+                      <option value="Tree Removal">Tree Removal</option>
+                      <option value="Roof Cleaning">Roof Cleaning</option>
+                      <option value="Oven Repairs">Oven Repairs</option>
+                      <option value="Car Mechanic">Car Mechanic</option>
+                      <option value="Lawn Mowing">Lawn Mowing</option>
+                      <option value="Gardening">Gardening</option>
+                      <option value="Painter">Painter</option>
+                      <option value="Air-conditioning Technician">Air-conditioning Technician</option>
+                      <option value="Heating Technician">Heating Technician</option>
+                    </select>
+                    <hr>
+                  </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <h1>Location</h1>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Enter the location to find the closest professional needed.</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><textarea name="" id="location" cols="50" rows="10">6 Paroo Place, Redfern, NSW, 2016</textarea></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select id = "serviceDistance" class="form-select dropbtn" aria-label="Default select example">
+                        <option selected>Service Distance</option>
+                        <option value="1">0-5KM</option>
+                        <option value="2">5-15KM</option>
+                        <option value="3">15-25KM</option>
+                        <option value="4">25+</option>
+                      </select>
+                      <hr>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <h1>Details</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Specify any extra details or instructions for the completion of the job.</p>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <textarea name="" id="extraDetails" cols="50" rows="10"></textarea>
+                  </td>
+              </tr>
+              <tr><td>
+                <button type="submit" class="btn btn-warning butt">Submit</button>
+                </td>
+              </tr>
+              </table>
+      </form>
+      </div>
+      
+    </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

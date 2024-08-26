@@ -1,0 +1,451 @@
+@font-face {
+    font-family: Above;
+    src: url('AboveDemoRegular-lJMd.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+/*.c {
+    border: 1px solid black;
+}*/
+
+.header {
+    grid-column: 1 / 3;
+
+    width: 100%;
+    height: 10.9vh;
+}
+
+.logo {
+    font-size: 350%;
+    font-family: Above;
+
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.profile {
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 3.5vw;
+    margin-top: -3.5vw;
+
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#prof {
+    margin-right: 0.5vw;
+}
+
+.menu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    width: 8vw;
+    height: 125vh;
+
+    display: grid;
+    grid-template-rows: repeat(14, auto);
+}
+
+#home {
+    grid-row: 1 / 2;
+    grid-gap: 5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prof {
+    grid-row: 2 / 3;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 5vw
+}
+
+#job {
+    grid-row: 3 / 4;
+    grid-gap: 5vw
+}
+
+#mes {
+    grid-row: 4 / 5;
+    grid-gap: 5vw
+}
+
+#cal {
+    grid-row: 5 / 6;
+    grid-gap: 5vw
+}
+
+#wal {
+    grid-row: 6 / 7;
+    grid-gap: 5vw
+}
+
+#exit {
+    grid-row: 14 / 15;
+}
+
+.icon {
+    margin: auto;
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+.dash {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    width: 92vw;
+
+    background-color: #F1E579;
+}
+
+.dash {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+
+    grid-gap: 4vw;
+}
+
+/*.d {
+    border: 1px solid black;
+}*/
+
+.subtitle {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+
+    margin-left: 4vw;
+    margin-top: 3.5vh;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.25em;
+}
+
+.requests {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    margin-left: 4vw;
+}
+
+.active {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #000000;
+}
+
+.completed {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.link3 {
+    text-decoration: none;
+    color: #000000;
+}
+
+.activeUsers {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+
+    margin-right: 4vw;
+}
+
+.row1 {
+    margin-top: -5vh;
+    height: 25vh;
+
+    background-color: white;
+}
+
+.icon2 {
+    margin-top: 2vh;
+    margin-left: 2vw;
+
+}
+
+.text1 {
+    margin-left: 2vw;
+    margin-top: 1vh;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 17px;
+}
+
+.num {
+    margin-left: 2vw;
+    margin-top: 0.5vh;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.link1 {
+    text-decoration: none;
+    color: #000000;
+}
+
+.line {
+    margin-left: 2vw;
+    margin-top: 2vh;
+
+    height: 0;
+    width: 14vw;
+
+    border: 1px solid #000000;
+
+}
+
+.avail {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+
+    margin-left: 4vw;
+    margin-right: 4vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+/*.a {
+    border: 1px solid black;
+}*/
+
+.row2 {
+    margin-top: -3vh;
+
+    height: 15vh;
+    background-color: white;
+}
+
+.sub {
+    margin-left: 2vw;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    letter-spacing: 0.25em;
+}
+.address {
+    margin-left: 2vw;
+    margin-top: 2.1vh;
+
+    margin-right: -5vw;
+
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 27vw;
+
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 3vh;
+    letter-spacing: 0.05em;
+}
+
+.address:focus {
+    outline: none;
+}
+
+#distance {
+    margin-left: 2vw;
+    margin-top: 2.3vh;
+
+    margin-right: -5vw;
+
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 18vw;
+
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    letter-spacing: 0.05em;
+}
+
+#distance:focus {
+    outline: none;
+}
+
+#avail1, #avail3 {
+    margin-left: 2vw;
+    margin-top: 2.3vh;
+
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 10vw;
+
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    letter-spacing: 0.05em;
+}
+
+#avail1:focus, #avail3:focus {
+    outline: none;
+}
+
+#dash {
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+
+.recent {
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.row3 {
+    margin-top: -3vh;
+
+    height: 60vh;
+    background-color: white;
+}
+
+.text {
+    margin-left: 2vw;
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 4.5vh;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+}
+
+.tableContainer {
+    width: 100%;
+   /* overflow-y: scroll;*/
+
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-bottom: 2vh;
+
+    margin: auto;
+    max-width: 1500px;
+    min-height: 50.5vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    text-align: left;
+
+}
+
+thead tr {
+    border-bottom: 1px solid #000000;
+    height: 1px;
+}
+
+th button{
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 3vh;
+
+    background-color: transparent;
+    border: none;
+
+    padding-bottom: 1vh;
+
+}
+
+tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+td {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 2vw;
+
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
+}
+
+.data-orderNum {
+    color: #1664C0;
+    text-decoration: underline;
+}
+
+.data-total {
+    text-align: right;
+}
+
+.status {
+    width: 10vw;
+    height: 3vw;
+
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 1.5vw;
+
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#completed {
+    background-color: #A2EF97;
+    color: #64B05A;
+}
+
+#progress {
+    background-color: #F1E579;
+    color: #B1A747;
+}
+
+#cancelled {
+    background-color: #D9D9D9;
+    color: #808080;
+}

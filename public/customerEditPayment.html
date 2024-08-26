@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="professionalEditPayment.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>BYTE | Edit Payment</title>
+    </head>
+    <body >
+        <div class="container">
+            <div class="c header">
+                <div class="logo">BYTE</div>
+                <div class="profile">
+                    <button id = "displayName" class="profile">
+                        <i id="prof" class="fa-regular fa-user"></i>
+                        Name
+                    </button>
+                </div>
+            </div>
+            <div class="c menu">
+                <a class = "icon" href="CustomerHomePage.html" id="home" >
+                    <img src="Home Icon.png" alt="home icon" class="icon">
+                </a>
+
+                <a class = "icon" href="customerProfile.html" id="prof" >
+                    <img src="Profile Icon Menu.png" alt="profile icon" class="icon">
+                </a>
+
+                <a href="CustomerMyOrders.html" class="icon" id="job">
+                    <img src="My Orders-Jobs Icon.png" alt="jobs icon" class="icon">
+                </a>
+
+                <a href="" class="icon" id="mes">
+                    <img src="message.png" alt="message icon" class="icon">
+                </a>
+
+                <a href="customerMembership.html" class="icon" id="cal">
+                    <img src="Plan Icon.png" alt="calender icon"  class="icon">
+                </a>
+
+                <a href="customerPayment.html" class="icon" id="wal">
+                    <img src="Wallet Icon.png" alt="wallet icon"  class="icon">
+                </a>
+
+                <a href="index.html" class="icon" id="exit">
+                    <img src="exit.png" alt="exit"  class="icon">
+                </a>
+            </div>
+            <div class="c payment-dash">
+                <div class="pay-title">My Payment</div>
+                <div class="pay-container">
+                    <div class="p pay-method">
+                        <div class="pay-method-title">Select a Payment Method</div>
+                        <input type="radio" name="pay-method" id="credit">
+                        <label for="pay-method" class="pay-method-text">
+                            Credit Card
+                            <img src="Visa Mastercard Icon.jpg" alt="Visa and Mastercard Icon" class="cred pay-icon">
+                        </label>
+                        <br>
+                        <input type="radio" name="pay-method" id="paypal">
+                        <label for="pay-method" class="pay-method-text">
+                            Paypal
+                            <img src="Paypal Icon.jpg" alt="Paypal Icon" class=" pay pay-icon">
+                        </label>
+                    </div>
+                    <div class="p line"><hr></div>
+                    <div class="p card-details">
+                        <div class="card-detail-title">Update Card Details</div>
+                        <div class="update-detail-list">
+                            <li class="detail-list-row">
+                                <div class="user">
+                                    <input class="input" id = "cardName" class="user" type="text" required placeholder="Name on Card"/>
+                                </div>
+                            </li>
+                            <li class="detail-list-row">
+                                <div class="number">
+                                    <input class="input" id = "cardNum" type="text" required placeholder="Card Number"/>
+                                </div>
+                            </li>
+                            <li class="detail-list-row clearfix">
+                                <div class="date">
+                                    <label for="#" class="expiry-text">Expiry Date</label><br>
+                                    <input class="month input2" id = "month" type="text" required placeholder="MM">
+                                    <input class="year input2" id = "year" type="text input" required placeholder="YY">
+                                </div>
+                                <div class="cvv">
+                                    <input class="cvv1 input" id = "cvv" type="password" required placeholder="CVV"/>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Save" class="btn save">
+                            <button class="btn cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

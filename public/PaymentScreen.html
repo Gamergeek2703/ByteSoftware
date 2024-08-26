@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYTE | Membership Payment</title>
+        <script src = "paymentScreen.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+        <script src="paymentInfo.js"></script>
+        <link rel="stylesheet" href="PaymentScreen.css" /> 
+    </head>
+    <body onload = "loadSubscriptionData()">
+        <div class="container">
+            <div class="header">
+                <div class = "logo">BYTE</div>
+            </div>
+
+            <div class="total">
+                <div class="t t1">Total:</div>
+                <div id = "paymentAmountText" class="t t2">$ 0</div>
+                <div class="t t3 line"></div>
+                <div class="t t4">How would you like to pay?</div>
+                <div class="t t5 box">
+                    <!--<label>
+                        <input type = "radio" class="option-input radio" name = "paymentOptions" checked />
+                        Credit Card
+                    </label>
+
+                    <img class = "img img1" src="Visa Mastercard Icon.jpg" alt="Visa and Mastercard Icon">
+
+                    <label>
+                        <input type = "radio" class="option-input radio" name = "paymentOptions" />
+                        Paypal
+                    </label>
+
+                    <img class = "img img2" src="Paypal Icon.jpg" alt = "Paypal Icon"/>-->
+                    <form id = "form">
+                        <div class="t button btn1">
+                            <input class = "pay" type="radio" id = "card" name = "paymentType" value = "Credit Card">
+                            <label class = "pay" for="card">Credit Card</label><br>
+                        </div>
+                        
+                        <div class = "t img img1">
+                            <img src="Visa Mastercard Icon.jpg" alt = "Visa and Mastercard Icon" />
+                        </div>
+
+                        <div class = "t button btn2">
+                            <input class = "pay" type="radio" id = "paypal" name = "paymentType" value = "Paypal">
+                            <label class = "pay" for="paypal">Paypal</label>
+                        </div>
+
+                        <div class = "t img img2">
+                            <img class = "img2" src="Paypal Icon.jpg" alt = "Paypal Icon" />
+                        </div>
+                    </form>
+                </div>
+                <div class="t t6"></div>
+                <div class="t t8 change-mind">
+                    <a class="t8" href="membership.html">
+                        <i class="t t7"></i> Change of mind?
+                    </a>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="d d1">Your Payment Details</div>
+                <form action="#" onsubmit="sendPaymentData(); return false;">
+                    <ul class = "detail-list">
+                        <li class="detail-list-row">
+                            <div class = "user">
+                                <!--<label for="#">Name on Card</label><br>-->
+                                <input class="input" id = "cardName" class="user" type="text" required placeholder="Name on Card"/>
+                            </div>
+                        </li>
+                        <li class="detail-list-row">
+                            <div class = "number">
+                                <!--<label for="#">Card Number</label><br>-->
+                                <input class="input" id = "cardNum" type="text" required placeholder="Card Number"/>
+                            </div>
+                        </li>
+                        <li class="detail-list-row clearfix">
+                            <div class="date">
+                                <label for="#">Expiry Date</label><br>
+                                <input class="month input2" id = "month" type="text" required placeholder="MM">
+                                <input class="year input2" id = "year" type="text input" required placeholder="YY">
+                            </div>
+                            <div class="cvv">
+                                <!--<label for="#">CVV</label><br>-->
+                                <input class="cvv1 input" id = "cvv" type="password" required placeholder="CVV"/>
+                            </div>
+                        </li>
+                        <li class="detail-list-row">
+                            <div class="checkbox">
+                                <label for="checkbox">
+                                    <input class="input1" id="checkbox" type="checkbox"/>
+                                    <span class="input1">Remember my information</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="detail-list-row">
+                            <div class="terms">
+                                Terms & Conditions<br><br>
+                                <label for="checkbox2">
+                                    <input class="input" id="checkbox2" type="checkbox"/>
+                                    <span class="terms1">By ticking this box, I agree that Byte, its affiliates and/or representatives may<br>
+                                         contact me (including by automatic telephone dialing system, SMS and,<br>
+                                        email) at the contact details on file with my account, including for marketing<br>
+                                        purpose. I understand that this is not a requirement to use Byte’s services<br>
+                                        and that I may opt out of these communications in account settings when<br>
+                                        logged in. I have also read and understand the Privacy Notice.</span>
+                                        <a class="pn" href="">Privacy Notice</a>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type = "submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="professionalSignUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>BYTE | Professional Sign Up</title>
+    <script src="professionalSignUp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid justify-content-center align-items-center ">
+        <img class="img-fluid mt-5" src="BYTE Logo.png" alt="">
+    </div>
+        <div class="main">
+
+        <div class="container">
+            <form onsubmit = "sendProfessionalData(); return false;" class="appointment-form" id="appointment-form">
+                <h1 style="letter-spacing:3px">Sign up now</h1>
+                    <p id="set">as a professional</p>
+                <div class="">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="first" id="first" placeholder="First Name" required />
+                            </td>
+                            <td>
+                                <input type="text" name="last" id="last" placeholder="Last Name" required />
+                            </td>
+                        </tr>
+                        <tr><input type="text" name="email" id="email" placeholder="Email" required /></tr>
+                        <tr><input type="text" name="company_name" id="company_name" placeholder="Company Name (optional)" /></tr>
+                        <tr>
+                            <td>
+                                <input type="password" name="password" id="password" placeholder="Password" required />
+                                <span class="focus-input100" data-symbol="&#xf190;"></span>
+                            </td>
+                            <td>
+                                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required />
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="address" name="address" id="address" placeholder="Address" required />
+                            </td>
+                            <td>
+                                <input type="zip" name="zip" id="zip" placeholder="Zip" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="dob" name="dob" id="dob" placeholder="Date of Birth" required />
+                            </td>
+                            <td>
+                                <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
+                            </td>
+                        </tr>
+
+                        <tr><label for="exp">Professional Experience</label></tr>
+                        <tr><textarea id="exp" rows="4" cols="56">e.g. tree removal</textarea></tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="distance" id="distance" placeholder="Service Distance" required />
+                            </td>
+                            <td>
+                                <input type="text" name="time" id="time" placeholder="Time Available" required />
+                            </td>
+                        </tr>
+                            <!--<tr><label for="service">Services you provide</label></tr>
+                            <tr><textarea id="service" rows="4" cols="56"></textarea></tr>-->
+                        <tr>
+                            <div class="service">
+                                <div class="btn">
+                                    <span class="btnText">Services you provide</span>
+                                    <span class="arrowDwn">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                </div>
+
+                                <ul id = "servicesProvided" class="list-items">
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Tree Removal
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Roof Cleaning
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Fence Installation
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Oven Repairs
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Car Mechanic
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Lawn Mowing
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Gardening
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Painter
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Air-conditioning Technician
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-check checkIcon"></i>
+                                        </span>
+                                        <span class="item-text">
+                                            Heating Technician
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script src="professionSignup.js"></script>
+                        </tr>
+
+                    </table>
+        
+                <div class="">
+                    <a href = "membership_prof.html">
+                        <input type="submit" name="submit" id="submit" class="submit" value="Continue" />
+                    </a>
+                </div>
+                <p id="already">Already have an account? <a href="professionalLogin.html">Sign In</a></p>
+            </form>
+        </div>
+
+    </div>
+    <hr style="width: 100%; color: #999; margin-top: 90px;">
+    <p id="copyright">©2023 BYTE Inc.</p>
+</body>
+
+</html>

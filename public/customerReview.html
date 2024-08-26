@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="customerReview.css">
+        <title>BYTE | Review</title>
+    </head>
+    <body>
+        <script src="customerReview.js"></script>
+        <div class="background">
+            <div class="container">
+                <div class="c title">
+                    Write a Review - Order
+                    <span id="orderNum">#0</span>
+                </div>
+                <div class="c line"><hr></div>
+                <div class="c prof-pic">
+                    <img src="profile2.jpg" alt="Profile picture for professional">
+                </div>
+                <div class="c" id="prof-name">NULL NULL</div>
+                <div class="c text">Service Review</div>
+                <div class="c rating">
+                    <input type="radio" name="stars" id="star1" value="5">
+                    <label for="star1"></label>
+
+                    <input type="radio" name="stars" id="star2" value="4">
+                    <label for="star2"></label>
+
+                    <input type="radio" name="stars" id="star3" value="3">
+                    <label for="star3"></label>
+
+                    <input type="radio" name="stars" id="star4" value="2">
+                    <label for="star4"></label>
+
+                    <input type="radio" name="stars" id="star5" value="1">
+                    <label for="star5"></label>
+                </div>
+                <div class="c review-textbox">
+                    <textarea name="" id="textBox" cols="30" rows="10" placeholder="Share details of your own experience using this service"></textarea>
+                </div>
+                <div class="c btn1">
+                    <a href="CustomerMyOrders.html">
+                        <button class="btn cancel-button" onclick="cancelFunction()">Cancel</button>
+                    </a>
+                </div>
+                <div class="c btn2">
+                    <button class="btn post-button" onclick="postFunction()">Post</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

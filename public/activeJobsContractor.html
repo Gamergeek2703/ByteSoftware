@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src = "loadActiveRequests.js"> </script>
+        <link rel="stylesheet" href="activeJobsContractor.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src = "activeRequestResponse.js"> </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>BYTE | Active Jobs</title>
+    </head>
+    <body onload = "loadActiveRequests('#displayName')">
+        <div class="container">
+            <div class="c header">
+                <div class="logo">BYTE</div>
+                <div class="profile">
+                    <a href="" id = "displayName" class="profile">
+                        <i id="prof" class="fa-regular fa-user"></i>
+                        thinking...
+                    </a>
+                </div>
+            </div>
+            <div class="c menu">
+                <a class = "icon" href="ProfessionalHomePage.html" id="home" >
+                    <img src="Home Icon.png" alt="home icon" class="icon">
+                </a>
+    
+                <a class = "icon" href="professionalProfile.html" id="prof" >
+                    <img src="Profile Icon Menu.png" alt="profile icon" class="icon">
+                </a>
+    
+                <a href="ProfessionalMyOrders.html" class="icon" id="job">
+                    <img src="My Orders-Jobs Icon.png" alt="jobs icon" class="icon">
+                </a>
+    
+                <a href="" class="icon" id="mes">
+                    <img src="message.png" alt="message icon" class="icon">
+                </a>
+    
+                <a href="professionalMembership.html" class="icon" id="cal">
+                    <img src="Plan Icon.png" alt="calender icon"  class="icon">
+                </a>
+    
+                <a href="professionalPayment.html" class="icon" id="wal">
+                    <img src="Wallet Icon.png" alt="wallet icon"  class="icon">
+                </a>
+    
+                <a href="index.html" class="icon" id="exit">
+                    <img src="exit.png" alt="exit"  class="icon">
+                </a>
+            </div>
+            <div class="active-dash">
+                <div class="active-title"> Active Jobs </div>
+                <div id = "tableContainer">
+                    <div class="gap"></div>
+                    <table id = "requestsTable">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Client Email</th>
+                            <th>Service Requested</th>
+                            <th>Address</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

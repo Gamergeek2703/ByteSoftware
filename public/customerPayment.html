@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="professionalPayment.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>BYTE | Payment Options</title>
+    </head>
+    <body >
+        <div class="container">
+            <div class="c header">
+                <div class="logo">BYTE</div>
+                <div class="profile">
+                    <button id = "displayName" class="profile">
+                        <i id="prof" class="fa-regular fa-user"></i>
+                        Name
+                    </button>
+                </div>
+            </div>
+            <div class="c menu">
+                <a class = "icon" href="CustomerHomePage.html" id="home" >
+                    <img src="Home Icon.png" alt="home icon" class="icon">
+                </a>
+
+                <a class = "icon" href="customerProfile.html" id="prof" >
+                    <img src="Profile Icon Menu.png" alt="profile icon" class="icon">
+                </a>
+
+                <a href="CustomerMyOrders.html" class="icon" id="job">
+                    <img src="My Orders-Jobs Icon.png" alt="jobs icon" class="icon">
+                </a>
+
+                <a href="" class="icon" id="mes">
+                    <img src="message.png" alt="message icon" class="icon">
+                </a>
+
+                <a href="customerMembership.html" class="icon" id="cal">
+                    <img src="Plan Icon.png" alt="calender icon"  class="icon">
+                </a>
+
+                <a href="customerPayment.html" class="icon" id="wal">
+                    <img src="Wallet Icon.png" alt="wallet icon"  class="icon">
+                </a>
+
+                <a href="index.html" class="icon" id="exit">
+                    <img src="exit.png" alt="exit"  class="icon">
+                </a>
+            </div>
+            <div class="c payment-dash">
+                <div class="pay-title">My Payment</div>
+                <div class="pay-container">
+                    <div class="pay-method">
+                        <div class="pay-method-title">Current Payment Method</div>
+                        <div class="pay-method-list">
+                            <li>
+                                <ul class="card-info">Card Information</ul>
+                                <ul class="cardInfo">
+                                    <span id="cardType">Visa</span>
+                                    ending in
+                                    <span id="cardLastNum">5524</span> 
+                                </ul>
+                                <br>
+                                <ul class="card-info">Name on Card</ul>
+                                <ul class="cardInfo">Simon Smith</ul>
+                            </li>
+                            <div class="edit-button">
+                                <a href="customerEditPayment.html">
+                                    <button class="editPaymentButton">Edit payment method</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

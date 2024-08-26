@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CustomerSignUp.css">
+    <title>Customer Sign Up</title>
+    <script src = "registration.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid justify-content-center align-items-center ">
+        <img class="img-fluid mt-5" src="BYTE Logo.png" alt="">
+    </div>
+        <div class="main">
+
+        <div class="container">
+            <form onsubmit = "sendRegistrationData();return false" class="appointment-form" id="appointment-form">
+                <h1 style="letter-spacing:3px">Sign up now</h1>
+                    <p id="set">as a Customer</p>
+                <div class="form-group-1">
+                    <table>
+                        <tr><input type="email" name="email" id="email" placeholder="Email" required /></tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="first" id="first" placeholder="First Name" required />
+                            </td>
+                            <td>
+                                <input type="text" name="last" id="last" placeholder="Last Name" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" name="password" id="password" placeholder="Password" required />
+                                <span class="focus-input100" data-symbol="&#xf190;"></span>
+                            </td>
+                            <td>
+                                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required />
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="address" name="address" id="address" placeholder="Address" required />
+                            </td>
+                            <td>
+                                <input type="zip" name="zip" id="zip" placeholder="Zip" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="dob" name="dob" id="dob" placeholder="Date of Birth" required />
+                            </td>
+                            <td>
+                                <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
+                            </td>
+                        </tr>
+                    </table>
+                <div class="form-check">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    By proceeding, I agree that BYT, its affiliates and/or representatives may contact me (including
+                    by automatic telephone dialing system, SMS and email) at the contact details on file with my
+                    account, including for marketing purposes. I understand that this is not a requirement to use
+                    BYTE's services and that I may opt out of these communications in account settings when
+                    logged in. I have also read and understand the <a href="">Privacy Notice</a>
+                    <!-- <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label> -->
+                </div>
+                <div class="">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Sign up"/>
+                </div>
+                <p id="already">Already have an account? <a href="CustomerLogin.html">Sign In</a></p>
+            </form>
+        </div>
+
+    </div>
+    <hr style="width: 100%; color: #999; margin-top: 90px;">
+    <p id="copyright">©2023 BYTE Inc.</p>
+</body>
+
+</html>

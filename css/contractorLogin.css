@@ -1,0 +1,48 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+.outer-img{
+    position: relative ;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.inner-img{
+    position: absolute;
+    bottom: 150px;
+    left: 12%;
+    z-index: 2;
+    width: 25%;
+}
+.btn {
+    background-color: teal;
+    color: black;
+    transition: all .7s;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .btn:hover {
+    border-color: black;
+    border-style: inherit;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+
+}
+.copyright{
+    position: relative;
+    margin: 0;
+}
+.copyright-text{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+

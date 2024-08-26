@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="membership.css">
+    <title>BYTE | Membership Selection</title>
+
+    <script src="paymentInfo.js" ></script> 
+    <script src="membership.js" ></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid justify-content-center align-items-center ">
+        <img class="img-fluid mt-5" src="BYTE Logo.png" alt="">
+        <h3>Membership Type</h3>
+    </div>
+<div class="spacing">
+<div class="pack_card">
+    <img class="img_fee" src="Subscription Fee Icon.png" alt="">
+    <div class="pack_name">Subscription Fee</div>
+    <div class="price_container">
+        <span class="price">$5000</span>
+      </div>
+      <p class="description"></p>
+       
+      <hr style="background-color:#F1E579;">
+
+    <div class="lists">
+      <div class="list">
+        <span>One-off upfront payment</span>
+      </div>
+      <div class="list">
+        <span>Better Value</span>
+      </div>
+      <div class="list">
+        <span>Unlimited call outs</span>
+      </div>   
+    </div>
+  <div class="bottom">
+    <button onclick = "sendSubscriptionData(5000)"class="btn" id = "sub">Select</button>
+  </div>
+</div>
+
+<div class="pack_card1">
+    <img class="img_fee" src="Commission Fee Icon.png" alt="">
+    <div class="pack_name">On-demand Fee</div>
+    <div class="price_container">
+        <span class="price">$0</span>
+      </div>
+    <p class="description"></p>
+
+    <hr style="background-color:#F1E579;">
+
+    <div class="lists">
+      <div class="list">
+        <span>Zero upfront payment</span>
+      </div>
+      <div class="list">
+        <span>Pay per service use</span>
+      </div>
+      <div class="list">
+        <span>Fee determined based on price of job</span>
+      </div>
+    </div>
+  <div class="bottom">
+    <button onclick = "sendSubscriptionData(0) "class="btn" id="fee">Select</a>
+  </div>
+  
+</div>
+</div>
+</body>
+</html>

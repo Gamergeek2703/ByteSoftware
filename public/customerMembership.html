@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="customerMembership.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>BYTE | Membership</title>
+    </head>
+    <body >
+        <div class="container">
+            <div class="c header">
+                <div class="logo">BYTE</div>
+                <div class="profile">
+                    <button id = "professionalHomepageName" class="profile">
+                        <i id="prof" class="fa-regular fa-user"></i>
+                        Name
+                    </button>
+                </div>
+            </div>
+            <div class="c menu">
+                <a class = "icon" href="CustomerHomepage.html" id="home" >
+                    <img src="Home Icon.png" alt="home icon" class="icon">
+                </a>
+
+                <a class = "icon" href="customerProfile.html" id="prof" >
+                    <img src="Profile Icon Menu.png" alt="profile icon" class="icon">
+                </a>
+
+                <a href="CustomerMyOrders.html" class="icon" id="job">
+                    <img src="My Orders-Jobs Icon.png" alt="jobs icon" class="icon">
+                </a>
+
+                <a href="" class="icon" id="mes">
+                    <img src="message.png" alt="message icon" class="icon">
+                </a>
+
+                <a href="customerMembership.html" class="icon" id="cal">
+                    <img src="Plan Icon.png" alt="calender icon"  class="icon">
+                </a>
+
+                <a href="customerPayment.html" class="icon" id="wal">
+                    <img src="Wallet Icon.png" alt="wallet icon"  class="icon">
+                </a>
+
+                <a href="index.html" class="icon" id="exit">
+                    <img src="exit.png" alt="exit"  class="icon">
+                </a>
+            </div>
+            <div class="membership">
+                <div class="mem-title">My Membership</div>
+                <div class="mem-container">
+                    <div class="mem-container2">
+                        <div class="mem1">
+                            <div class="m1 img1">
+                                <img src="Subscription Fee Icon.png" alt="Subscription fee icon" class="sub-icon">
+                            </div>
+                            <div class="m1 text sub-text">Subscription Fee</div>
+                            <div class="m1 text sub-fee">$ 5000</div>
+                            <div class="m1 line"><hr></div>
+                            <div class="m1 mText sub-text1">One-off upfront payment</div>
+                            <div class="m1 mText sub-text2">Better Value</div>
+                            <div class="m1 mText sub-text3">Less Hassle</div>
+                            <div class="m1 mText sub-text4">Fee not dependent on amount of jobs</div>
+                            <div class="btn btn1">
+                                <!--<input type="button" value="Select" id="button1" class="sub-button" onclick="selected()">-->
+                                <input type="radio" name="selection" id="subSelect" onclick="selected()">
+                                <label class="button btn-default sub-button" for="subSelect" id="subSelect">Select</label>
+                            </div>
+                        </div>
+                        <div class="mem2">
+                            <div class="m1 img1">
+                                <img src="Commission Fee Icon.png" alt="Commission fee icon" class="sub-icon">
+                            </div>
+                            <div class="m1 text sub-text">Commission Fee</div>
+                            <div class="m1 text sub-fee">$ 0</div>
+                            <div class="m1 line"><hr></div>
+                            <div class="m1 mText sub-text1">Zero upfront payment</div>
+                            <div class="m1 mText sub-text2">Pay when the job in completed</div>
+                            <div class="m1 mText sub-text3">Work less, be charged less</div>
+                            <div class="m1 mText sub-text4">Fee dependent on amount of jobs</div>
+                            <div class="btn btn2">
+                                <!--<input type="button" value="Select" id="button2" class="com-button" onclick="selected();">-->
+                                <input type="radio" name="selection" id="comSelect" onclick="selected()">
+                                <label class="button btn-default com-button" for="comSelect" id="comSelect">Select</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="customerMemButton.js"></script>
+    </body>
+</html>

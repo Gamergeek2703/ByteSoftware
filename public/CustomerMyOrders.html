@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="customerMyOrders.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="CustomerMyOrders.js"></script>
+        <title>BYTE | My Orders</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="c header">
+                <div class="logo">BYTE</div>
+                <div class="profile">
+                    <button id = "professionalHomepageName" class="profile">
+                        <i id="prof" class="fa-regular fa-user"></i>
+                        Name
+                    </button>
+                </div>
+            </div>
+            <div class="c menu">
+                <a class = "icon" href="CustomerHomepage.html" id="home" >
+                    <img src="Home Icon.png" alt="home icon" class="icon">
+                </a>
+    
+                <a class = "icon" href="customerProfile.html" id="prof" >
+                    <img src="Profile Icon Menu.png" alt="profile icon" class="icon">
+                </a>
+    
+                <a href="CustomerMyOrders.html" class="icon" id="job">
+                    <img src="My Orders-Jobs Icon.png" alt="jobs icon" class="icon">
+                </a>
+    
+                <a href="" class="icon" id="mes">
+                    <img src="message.png" alt="message icon" class="icon">
+                </a>
+    
+                <a href="customerMembership.html" class="icon" id="cal">
+                    <img src="Plan Icon.png" alt="calender icon"  class="icon">
+                </a>
+    
+                <a href="customerPayment.html" class="icon" id="wal">
+                    <img src="Wallet Icon.png" alt="wallet icon"  class="icon">
+                </a>
+    
+                <a href="index.html" class="icon" id="exit">
+                    <img src="exit.png" alt="exit"  class="icon">
+                </a>
+            </div>
+            <div class="c myOrders">
+                <div class="title">My Orders</div>
+                <div class="ordersContainer">
+                    <div class="c" id="filterButtons">
+                        <button class="btn all" onclick="filterSelection('all')"> All </button>
+                        <span class="divider">|</span>
+                        <button class="btn completed" onclick="filterSelection('completed')"> Completed </button>
+                        <span class="divider">|</span>
+                        <button class="btn inProgress" onclick="filterSelection('inProgress')"> In Progress </button>
+                        <span class="divider">|</span>
+                        <button class="btn cancelled" onclick="filterSelection('cancelled')"> Cancelled </button>
+                    </div>
+                    <form class="c">
+                        <input class="searchBar" type="text" placeholder="Search">
+                        <button type="submit" class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="c ordersTable" id="tableScroll">
+                        <table class="myOrdersTable" id="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <button id="orderNum">Order No.</button>
+                                    </th>
+                                    <th>
+                                        <button id="date">Date</button>
+                                    </th>
+                                    <th>
+                                        <button id="status">Status</button>
+                                    </th>
+                                    <th>
+                                        <button id="total">Total</button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableContent">
+                                <tr class="data">
+                                    <td class="data-orderNum">#3</td>
+                                    <td class="data-date">22/04/2023 14:24 </td>
+                                    <td>
+                                        <div class="status" id="completed">Completed</div>
+                                    </td>
+                                    <td class="data-total">$1512.50</td>
+                                </tr>
+                                <tr class="data">
+                                    <td class="data-orderNum">#3</td>
+                                    <td class="data-date">22/04/2023 14:24 </td>
+                                    <td>
+                                        <div class="status" id="progress">In Progress</div>
+                                    </td>
+                                    <td class="data-total">$1512.50</td>
+                                </tr>
+                                <tr class="data">
+                                    <td class="data-orderNum">#3</td>
+                                    <td class="data-date">22/04/2023 14:24 </td>
+                                    <td>
+                                        <div class="status" id="cancelled">Cancelled</div>
+                                    </td>
+                                    <td class="data-total">$1512.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
